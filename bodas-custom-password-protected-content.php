@@ -46,7 +46,7 @@ function bodas_cppc_admin_scripts($hook_suffix) {
 	
 	global $bodas_cppc_settings_page;
 	
-	if ($bodas_cppc_settings_page == $hook_suffix || 'post.php' == $hook_suffix)
+	if ($bodas_cppc_settings_page == $hook_suffix || 'post.php' == $hook_suffix || 'post-new.php' == $hook_suffix)
 		wp_enqueue_style('bodas_cppc_admin_styles', plugins_url('inc/css/styles.css', __FILE__), null, BODAS_CPPC_VERSION, 'all');
 		wp_enqueue_script('bodas_cppc_admin_scripts', plugins_url('inc/js/functions.js', __FILE__), array('jquery'), BODAS_CPPC_VERSION, true);
 		

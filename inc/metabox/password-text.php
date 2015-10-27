@@ -6,7 +6,7 @@
 function bodas_cppc_add_metabox() {
 	
 	global $_wp_post_type_features;
-	add_meta_box( 'bodas_cppc_textmeta', 'Custom Password Protect Page Text', 'bodas_cppc_metabox_cb', null, 'normal', 'high' );
+	add_meta_box( 'bodas_cppc_textmeta', 'Custom Password Protect Page Content', 'bodas_cppc_metabox_cb', null, 'normal', 'high' );
 
 }
 add_action( 'add_meta_boxes', 'bodas_cppc_add_metabox' );
