@@ -26,6 +26,8 @@ This is a simple plugin that allows you to modify the default content used on th
 * Once the `Password Protected` visibility option has been selected, you will see a new metabox appear (screenshot below).
 * Enter your per page content in the rich text editor provided.
 * Update/publish your page.
+ 
+![Screenshot of Metabox](http://cspir.es/wordpress-projects/images/bodas-cppc-metabox.png)
 
 ## To-Do
 
