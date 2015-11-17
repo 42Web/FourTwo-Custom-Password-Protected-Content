@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: 	42 Web Custom Password Protected Content
-Plugin URI: 	https://github.com/BODA82/42web-custom-password-protected-content
+Plugin Name: 	FourTwo Custom Password Protected Content
+Plugin URI: 	https://github.com/BODA82/fourtwo-custom-password-protected-content
 Description: 	This plugin changes the default password protected text on either a global, or page-by-page basis.
 Version: 		1.0
 Author: 		Christopher Spires
@@ -30,7 +30,7 @@ function fourtwo_cppc_admin_add_page() {
 	
 	global $fourtwo_cppc_settings_page;
 	
-	$fourtwo_cppc_settings_page = add_options_page('42 Web Custom Password Protected Content', 'Custom Password Protected Content', 'manage_options', 'fourtwo_cppc', 'fourtwo_cppc_admin_page');
+	$fourtwo_cppc_settings_page = add_options_page('FourTwo Custom Password Protected Content', 'Custom Password Protected Content', 'manage_options', 'fourtwo_cppc', 'fourtwo_cppc_admin_page');
 	
 	add_action('admin_enqueue_scripts', 'fourtwo_cppc_admin_scripts');
 
@@ -63,7 +63,7 @@ function fourtwo_cppc_admin_page() {
 	
 	<div class="wrap">
 		<div class="fourtwo_cppc_inner">
-			<h1><?php _e('42 Web Custom Password Protected Content', 'fourtwo_wp'); ?></h1>
+			<h1><?php _e('FourTwo Custom Password Protected Content', 'fourtwo_wp'); ?></h1>
 			<form action="options.php" method="post">
 				<?php settings_fields('fourtwo_cppc_options'); ?>
 				<?php do_settings_sections('fourtwo_cppc'); ?>
@@ -95,7 +95,7 @@ function plugin_admin_init(){
 
 function fourtwo_cppc_section_text() {
 	
-	echo '<p>' . __('The options below are for setting a global password protected page message. If you do not enter a custom message, the default WordPress message will display. Alternatively, you can also specify an individual pages message when editing that page by using the 42 Web Custom Password Protected Text metabox.', 'fourtwo_wp') . '</p>';
+	echo '<p>' . __('The options below are for setting a global password protected page message. If you do not enter a custom message, the default WordPress message will display. Alternatively, you can also specify an individual pages message when editing that page by using the FourTwo Custom Password Protected Text metabox.', 'fourtwo_wp') . '</p>';
 
 }
 
